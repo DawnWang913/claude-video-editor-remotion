@@ -4,6 +4,7 @@ Config.setVideoImageFormat("jpeg");
 Config.setOverwriteOutput(true);
 Config.setCodec("h264");
 Config.setCrf(18);
+Config.setStudioPort(3317);
 
 // Project-local Studio translations; video compositions and package files are untouched.
 Config.overrideBundlerConfig((config) => {

@@ -18,7 +18,7 @@ npm run render
 npm run still
 ```
 
-- Studio：运行 `npm start` 后打开终端提示的本地地址。
+- Studio：运行 `npm start` 后打开 [中文编辑器](http://localhost:3317/EditorStory)。本项目固定使用 3317 端口，避免与其他项目的默认 3000 端口混淆。
 - 完整视频：`out/claude-editor.mp4`
 - 预览图：`out/preview.png`
 - 合成 ID：`EditorStory`
