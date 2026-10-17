@@ -55,3 +55,9 @@ npx remotion still src/index.ts EditorStory out/frame-450.png --frame=450
 代码和重新绘制的 SVG 在本项目中提供。参考音轨及参考作品的权利归其原权利人；本仓库不为这些素材授予额外许可。字体依据 `public/fonts/OFL.txt` 分发。Remotion 的使用条款请参考其官方说明。
 
 参考技术文档：[Remotion Composition](https://www.remotion.dev/docs/composition)、[Remotion rendering](https://www.remotion.dev/docs/render)。
+
+## 中文编辑界面
+
+运行 `npm start` 后，Studio 的常用菜单、属性面板、时间轴提示及导出窗口默认使用简体中文。组件名、文件名和 H.264 等格式名称保留原文；少数高级选项的上游说明可能仍为英文。
+
+汉化词典位于 `tools/studio-zh.json`，通过 `remotion.config.ts` 中的构建配置加载。它只翻译 Remotion Studio 的展示文本，不修改视频组件、内部参数值或 `node_modules` 中的原文件。执行 `npm ci` 后仍然有效。配置与当前固定的 Remotion 4.0.536 版本一起验证，升级 Remotion 时应复查新增界面文本。
