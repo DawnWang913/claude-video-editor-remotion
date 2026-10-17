@@ -1,0 +1,23 @@
+{
+  "name": "claude-video-editor-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An editable hand-drawn video editing animation, recreated with Remotion",
+  "scripts": {
+    "start": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts EditorStory out/claude-editor.mp4",
+    "still": "remotion still src/index.ts EditorStory out/preview.png --frame=690",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.536",
+    "remotion": "4.0.536",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
+  }
+}
